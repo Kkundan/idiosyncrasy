@@ -2,7 +2,7 @@
   "name": "react-sample",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "compile": "webpack",
     "start": "node server.js",
@@ -19,6 +19,9 @@
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "express": "^4.16.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-jsonschema-form": "^0.50.1",
     "webpack": "^3.6.0",
     "webpack-dev-middleware": "^1.12.0"
   }

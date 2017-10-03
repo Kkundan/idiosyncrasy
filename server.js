@@ -8,6 +8,10 @@ const compiler = webpack(webpackConfig);
  
 app.use(express.static(__dirname + '/www'));
  
+app.get('/test', function (req, res) {
+    res.send('Hello World 2!')
+})
+
 app.use(webpackDevMiddleware(compiler, {
   hot: true,
   filename: 'bundle.js',
@@ -19,7 +23,7 @@ app.use(webpackDevMiddleware(compiler, {
 }));
  
 const server = app.listen(3000, function() {
-  const host = server.address().address;
+//   const host = server.address().host;
   const port = server.address().port;
-  console.log('Example app listening at http://%s:%s', host, port);
+  console.log('Application running at %s', port);
 });
