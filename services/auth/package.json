@@ -1,11 +1,11 @@
 {
-  "name": "react-sample",
+  "name": "idiosyncrasy",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "compile": "webpack",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

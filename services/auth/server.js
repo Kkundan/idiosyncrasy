@@ -1,3 +1,4 @@
+'use strict';
 const express = require('express');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpack = require('webpack');
@@ -7,7 +8,7 @@ const app = express();
 const compiler = webpack(webpackConfig);
  
 app.use(express.static(__dirname + '/www'));
- 
+
 app.get('/test', function (req, res) {
     res.send('Hello World 2!')
 })

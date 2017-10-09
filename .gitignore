@@ -1,2 +1,2 @@
-node_modules
-www/bundle.js
+services/*/node_modules
+services/*/www/bundle.js
